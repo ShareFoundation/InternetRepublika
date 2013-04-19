@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="plugins.sfPropelActAsTaggableBehaviorPlugin.lib.model" defaultIdMethod="native">
+
+  <table name="sf_tag" phpName="Tag" package="plugins.sfPropelActAsTaggableBehaviorPlugin.lib.model">
+    <column name="id" phpName="ID" type="integer" required="true" primaryKey="true" autoincrement="true" />
+    <column name="name" type="varchar" size="100" />
+    <column name="is_triple" type="boolean" />
+    <column name="triple_namespace" type="varchar" size="100" />
+    <column name="triple_key" type="varchar" size="100" />
+    <column name="triple_value" type="varchar" size="100" />
+    <index name="name">
+      <index-column name="name" />
+    </index>
+    <index name="triple1">
+      <index-column name="triple_namespace" />
+    </index>
+    <index name="triple2">
+      <index-column name="triple_key" />
+    </index>
+    <index name="triple3">
+      <index-column name="triple_value" />
+    </index>
+  </table>
+
+  <table name="sf_tagging" phpName="Tagging" package="plugins.sfPropelActAsTaggableBehaviorPlugin.lib.model">
+    <column name="id" phpName="ID" type="integer" required="true" primaryKey="true" autoincrement="true" />
+    <column name="tag_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_tag" onDelete="CASCADE">
+      <reference local="tag_id" foreign="id" />
+    </foreign-key>
+    <column name="taggable_model" type="varchar" size="30" />
+    <column name="taggable_id" type="integer" />
+    <index name="tag">
+      <index-column name="tag_id" />
+    </index>
+    <index name="taggable">
+      <index-column name="taggable_model" />
+      <index-column name="taggable_id" />
+    </index>
+  </table>
+
+</database>

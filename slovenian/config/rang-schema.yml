@@ -1,0 +1,61 @@
+propel:
+  _attributes:
+    package:                 lib.model.rang
+ 
+  post_visits: 
+    id:                      ~
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: false, onDelete: cascade, onUpdate: cascade }
+    cookie_id:               { type: varchar, required: false }
+    created_at:              ~
+    
+  partie_visits: 
+    id:                      ~
+    partie_id:               { type: integer, foreignTable: partie, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: false, onDelete: cascade, onUpdate: cascade }
+    cookie_id:               { type: varchar, required: false }
+    created_at:              ~
+
+  post_daily_stats:
+    id:                      ~
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    like:                    { type: integer, required: true, default: 0 }
+    twitt:                   { type: integer, required: true, default: 0 }
+    comment:                 { type: integer, required: true, default: 0 }
+    badge:                   { type: integer, required: true, default: 0 }
+    views:                   { type: integer, required: true, default: 0 }
+    current_index:           { type: float, required: true, default: 0 }
+    created_at:              ~
+    
+ 
+  partie_daily_stats:
+    id:                      ~
+    partie_id:               { type: integer, foreignTable: partie, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    like:                    { type: integer, required: true, default: 0 }
+    twitt:                   { type: integer, required: true, default: 0 }
+    comment:                 { type: integer, required: true, default: 0 }
+    badge:                   { type: integer, required: true, default: 0 }
+    views:                   { type: integer, required: true, default: 0 }
+    current_index:           { type: float, required: true, default: 0 }
+    created_at:              ~
+    
+  post_index:
+    id:                      ~
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    daily:                   { type: float, required: true, default: 0.00 }
+    weekly:                  { type: float, required: true, default: 0.00 }
+    total:                   { type: float, required: true, default: 0.00 }
+
+  partie_index:
+    id:                      ~
+    partie_id:               { type: integer, foreignTable: partie, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    daily:                   { type: float, required: true, default: 0.00 }
+    weekly:                  { type: float, required: true, default: 0.00 }
+    total:                   { type: float, required: true, default: 0.00 }
+    
+  partie_custom_points:
+    id:                      ~
+    partie_id:               { type: integer, foreignTable: partie, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    points:                  { type: integer, required: true, default: 0 }
+    created_at:              ~

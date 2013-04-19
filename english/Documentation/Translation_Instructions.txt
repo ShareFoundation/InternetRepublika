@@ -1,0 +1,18 @@
+Translation instructions
+
+Open messages.xml in any text editor (Notepad for example)
+
+On line 4 replace 'target-language' do desired language. For example 'sr' for Serbian.
+
+Words that need to be translated are starting from line 7.
+
+Block for one phrase is consisted from following lines of code:
+
+<trans-unit id="1">
+ <source>Loading</source>
+ <target></target>
+</trans-unit>
+
+Between <target></target> is place where word or phrase need to be inserted. In this example <target>Ucitavanje</target> (<target>Translation of line from source language</target>)
+
+Repeat this for all blocks in messages.xml

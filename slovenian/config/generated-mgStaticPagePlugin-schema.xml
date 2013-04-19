@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="plugins.mgStaticPagePlugin.lib.model" defaultIdMethod="native">
+
+  <table name="mg_page" phpName="Page">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="label" type="VARCHAR" required="true" />
+    <unique>
+      <unique-column name="label" />
+    </unique>
+    <column name="url" type="VARCHAR" required="true" />
+    <unique>
+      <unique-column name="url" />
+    </unique>
+    <column name="title" type="VARCHAR" required="false" />
+    <column name="meta_title" type="VARCHAR" required="false" />
+    <column name="meta_description" type="LONGVARCHAR" required="false" />
+    <column name="meta_keywords" type="LONGVARCHAR" required="false" />
+    <column name="text" type="LONGVARCHAR" required="false" />
+    <column name="is_published" type="BOOLEAN" required="false" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="mg_content" phpName="Content">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="label" type="VARCHAR" required="true" />
+    <unique>
+      <unique-column name="label" />
+    </unique>
+    <column name="title" type="VARCHAR" required="true" />
+    <column name="text" type="LONGVARCHAR" required="false" />
+    <column name="is_published" type="BOOLEAN" required="false" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

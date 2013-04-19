@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Partie
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Partie
+    plural:                Parties
+    route_prefix:          partie
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        sf_guard_user: {label: User}
+        total_index: {label: Support Index }
+        
+      list:
+        title: Parties
+        display: [=name, sf_guard_user, bio, is_published, total_index]
+        actions: {}
+        object_actions:
+          _edit: ~
+          _delete: ~
+          _custom_points: { action: custom_points }
+      
+      filter:  ~
+      form:
+        display: 
+          "General": [name, user_id, bio, is_published, total_index]
+      
+      edit:
+        title: Edit party %%name%%
+      
+      new:
+        title: Create party

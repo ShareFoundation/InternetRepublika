@@ -1,0 +1,17 @@
+propel:
+  _attributes:
+    package:                 lib.model.partie
+ 
+  partie:
+    id:                      ~
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    name:                    { type: VARCHAR, required: true }
+    bio:                     { type: LONGVARCHAR, required: true, size: 1000 }
+    logo:                    { type: VARCHAR, required: false }
+    url:                     { type: VARCHAR, required: false }
+    facebook_page:           { type: LONGVARCHAR, required: false }
+    total_index:             { type: float, required: true, default: 0.00 }
+    is_published:            { type: boolean, default: true, required: true }
+    comments_count:          { type: integer, required: false, default: 0 }
+    created_at:              ~
+    updated_at:              ~

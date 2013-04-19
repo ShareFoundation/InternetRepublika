@@ -1,0 +1,17 @@
+# Sqlfile -> Database map
+plugins.sfGuardPlugin.lib.model.schema.sql=propel
+plugins.mgStaticPagePlugin.lib.model.schema.sql=propel
+lib.model.newsletter.schema.sql=propel
+lib.model.profile.schema.sql=propel
+lib.model.news.schema.sql=propel
+lib.model.badge.schema.sql=propel
+lib.model.category.schema.sql=propel
+lib.model.flag.schema.sql=propel
+lib.model.partie.schema.sql=propel
+lib.model.post.schema.sql=propel
+lib.model.rang.schema.sql=propel
+lib.model.session.schema.sql=propel
+lib.model.comment.schema.sql=propel
+plugins.sfPropelActAsTaggableBehaviorPlugin.lib.model.schema.sql=propel
+lib.model.menu.schema.sql=propel
+lib.model.configuration.schema.sql=propel

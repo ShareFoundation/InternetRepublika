@@ -1,0 +1,111 @@
+p.error {
+	display: block;
+	width: 945px;
+	float: left;
+}
+p.success {
+	display: block;
+	width: 945px;
+	float: left;
+	color: #009900;
+}
+input[type=text] {
+	background: white !important;
+	width: 250px;
+}
+input[type=password] {
+	background: white !important;
+	width: 250px;
+}
+.login-table {
+	width: 50%;
+}
+.login-table th {
+	width: 110px;
+	padding: 5px;
+	background: none;
+}
+.login-table th label {
+	font-size: 15px;
+	margin: none;
+	color: #434A48;
+}
+.login-table td {
+	font-size: 15px;
+	padding: 5px;
+}
+.sf_admin_form_row div {
+	min-height: 26px;
+}
+.sf_admin_form_row div .content input[type=checkbox] {
+	position: relative;
+	top: 6px;
+}
+.sf_admin_form_row div .content input[type=text] {
+	width: 350px !important;
+}
+.sf_admin_form_row div .content input[type=password] {
+	width: 350px !important;
+}
+.sf_admin_form_row div .content select {
+	width: 350px !important;
+}
+.sf_admin_form_row div .content textarea {
+	width: 750px !important;
+	height: 220px;
+}
+.sf_admin_filter input[type=text] {
+	width: 200px !important;
+}
+.sf_admin_filter select {
+	width: 209px !important;
+}
+.sf_admin_form fieldset h2 {
+	color: white !important;
+	background: #434A48 !important;
+}
+.sf_admin_actions li {
+	margin:0px;
+	padding: 0px;
+	float: left;
+	display: block;
+	height: 26px;
+	line-height: 26px;
+}
+.sf_admin_actions li a {
+	background-position: 0 4px !important;
+}
+.sf_admin_list table th {
+	color: white !important;
+	background: #434A48 !important;
+}
+.sf_admin_list table th a {
+	color: white !important;
+}
+#sf_admin_list_th_actions {
+	width: 110px;
+	text-align: center !important;
+}
+.sf_admin_td_actions li {
+	margin: 0px;
+	padding: 0px;
+}
+.sf_admin_td_actions li a {
+	background-position: 0px 3px !important;
+}
+.invalid-permissions {
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+.error_list {
+	color: #FF0000;
+	font-weight: bold;
+}
+ul.error_list {
+	padding: 0;
+	margin: 0;
+}
+.error_list li {
+	margin-left: 0px;
+	background-position: 4px 6px !important;
+}

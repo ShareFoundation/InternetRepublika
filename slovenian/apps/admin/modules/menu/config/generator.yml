@@ -1,0 +1,34 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Menu
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Menu
+    plural:                Menus
+    route_prefix:          menu
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        title:             { is_real: true }
+        link:              { label: Url }
+      
+      list:
+        title: Menus
+        display: [=title, is_enabled, order_position]
+        
+      filter:  ~
+      
+      form:
+        display:
+          "Data":    [title, link]
+          "General": [is_enabled, is_target_blank, order_position, parent_id]
+          
+      edit:
+        title: Edit menu item "%%title%%"
+      new:
+        title: Add new menu item

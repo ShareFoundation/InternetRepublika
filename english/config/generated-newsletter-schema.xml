@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.newsletter" defaultIdMethod="native">
+
+  <table name="newsletter">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="email" type="VARCHAR" required="true" />
+    <column name="first_name" type="VARCHAR" required="false" />
+    <column name="last_name" type="VARCHAR" required="false" />
+    <column name="is_subscribed" type="boolean" default="" required="true" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

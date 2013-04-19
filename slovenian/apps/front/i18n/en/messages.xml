@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="sr" datatype="plaintext" original="messages" date="2013-02-26T09:20:52Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Loading</source>
+        <target>Nalaganje</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>You have successfully regsitered.</source>
+        <target>Registracija je bila uspešna.</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Send</source>
+        <source>Pošlji</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>VOTE: DRAG MEDAL &amp; BADGE!</source>
+        <target>VOLI: IZBERI MEDALJO &amp; ZNAČKO!</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Medals</source>
+        <target>Medalje</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Badges</source>
+        <target>Značke</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Report post</source>
+        <target>Objavi sporočilo</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Design &amp; development</source>
+        <target>Oblikovanje &amp; razvoj</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Used tags</source>
+        <target>Uporabljene označbe</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>There are no posts</source>
+        <target>Ni novih sporočil</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Name</source>
+        <target>Ime</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Email</source>
+        <target>Elektronski naslov</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Subject</source>
+        <target>Tema</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Message</source>
+        <target>Sporočilo</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Email address is not valid.</source>
+        <target>Email ni veljaven.</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Poruka</source>
+        <target>Sporočilo</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Biography</source>
+        <target>Biografija</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Enter Facebook fun page URL of your party</source>
+        <target>Vstavi naslov svoje Facebook fun strani</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Comment</source>
+        <target>Komentar</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Title</source>
+        <target>Naslov</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Link</source>
+        <target>Povezava</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Photo</source>
+        <target>Fotografija</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Question</source>
+        <target>Vprašanje</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Answer 1</source>
+        <target>Odgovor 1</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Answer 2</source>
+        <target>Odgovor 2</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Answer 3</source>
+        <target>Odgovor 3</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Answer 4</source>
+        <target>Odgovor 4</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Answer 5</source>
+        <target>Odgovor 5</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Quote</source>
+        <target>Quote</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Author</source>
+        <target>Avtor</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Youtube Link</source>
+        <target>Youtube povezava</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>First Name</source>
+        <target>Ime</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last Name</source>
+        <target>Priimek</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Username</source>
+        <target>Uporabniško ime</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Password</source>
+        <target>Geslo</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Confirm Password</source>
+        <target>Potrdi geslo</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Remember me</source>
+        <target>Zapomni si me</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Passwords did not match.</source>
+        <target>Gesli nista enaki.</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>User with that email address not exists.</source>
+        <target>Uporabnik s tem email naslovom ne obstaja.</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Party with that name already exists.</source>
+        <target>Stranka s tem imenom že obstaja.</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>User with that email address already exists.</source>
+        <target>Uporabnik s tem email naslovom že obstaja.</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Youtube link is not valid.</source>
+        <target>Youtube link ni veljaven.</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Connection error</source>
+        <target>Napaka v povezavi</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>You have successfully logged in.</source>
+        <target>Uspešno ste se prijavili.</target>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>You have successfully logged out.</source>
+        <target>Uspešno ste se odjavili.</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>You have successfully registered.</source>
+        <target>Uspešno ste se registrirali.</target>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Your new password has been sent to</source>
+        <target>Vaše novo geslo je bilo poslano na</target>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Send new password</source>
+        <target>Počlji novo geslo</target>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Login</source>
+        <target>Prijava</target>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Register</source>
+        <target>Registracija</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>You are already logged in.</source>
+        <target>Ste že prijavljeni.</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Log Out</source>
+        <target>Odjava</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Close</source>
+        <target>Zapri</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Forgot password?</source>
+        <target>Pozabljeno geslo?</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>You need to write your name.</source>
+        <target>Vpišite svoje ime.</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>You need to write your comment.</source>
+        <target>Vpišite svoj komentar.</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Add Comment</source>
+        <target>Dodaj komentar</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>You have successfully flaged comment as inappropriate.</source>
+        <target>Uspešno ste označili komentar kot neprimeren.</target>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>Created by</source>
+        <target>Ustvaril</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Flag</source>
+        <target>Zastava</target>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Delete</source>
+        <target>Zbriši</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Reply</source>
+        <target>Odgovori</target>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>Hello</source>
+        <target>Pozdravljeni</target>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>You have new contact from site</source>
+        <target>Imate nov kontakt s strani</target>
+      </trans-unit>
+      <trans-unit id="66">
+        <source>you have successfully reset your password</source>
+        <target>Uspešno ste resetirali svoje geslo</target>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>new password is</source>
+        <target>Novo geslo</target>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>Regards</source>
+        <target>Pozdravljeni</target>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>News</source>
+        <target>Novice</target>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>Parties</source>
+        <target>Stranke</target>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>Search Parties</source>
+        <target>Išči stranke</target>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>Party</source>
+        <target>Stranka</target>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>You need to be logged in</source>
+        <target>Morate biti prijavljeni</target>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Party has been successfully deleted.</source>??????
+        <target>Stranka je bila uspešno izbrisana.</target>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>search</source>
+        <target>Išči</target>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>Orientation</source>
+        <target>Orientacija</target>
+      </trans-unit>
+      <trans-unit id="77">
+        <source>Support Index</source>
+        <target>Indeks podpore</target>
+      </trans-unit>
+      <trans-unit id="78">
+        <source>Read more</source>
+        <target>Preberi več</target>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>Replicas</source>
+        <target>Replike</target>
+      </trans-unit>
+      <trans-unit id="80">
+        <source>Comments</source>
+        <target>Komentarji</target>
+      </trans-unit>
+      <trans-unit id="81">
+        <source>Support Letters</source>
+        <target>Pisma podpori</target>
+      </trans-unit>
+      <trans-unit id="82">
+        <source>Party Rankings</source>
+        <target>Rang stranke</target>
+      </trans-unit>
+      <trans-unit id="83">
+        <source>Rang</source>
+        <target>Rang</target>
+      </trans-unit>
+      <trans-unit id="84">
+        <source>Post</source>
+        <target>Sporočilo</target>
+      </trans-unit>
+      <trans-unit id="85">
+        <source>You need to be logged in.</source>
+        <target>Morate biti prijavljeni.</target>
+      </trans-unit>
+      <trans-unit id="86">
+        <source>You have successfully </source>
+        <target>Uspešno ste</target>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>created new</source>
+        <target>Ustvari nov</target>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>edited</source>
+        <target>Urejen</target>
+      </trans-unit>
+      <trans-unit id="89">
+        <source>post</source>
+        <target>sporočilo</target>
+      </trans-unit>
+      <trans-unit id="90">
+        <source>Thank you for vote.</source>
+        <target>Hvala za glas.</target>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>Error in system, please refresh page.</source>
+        <target>Napaka v sistemu, prosim osvežite stran.</target>
+      </trans-unit>
+      <trans-unit id="92">
+        <source>You have successfully added badge.</source>
+        <target>Uspešno ste dodali značko.</target>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>Thank you! You have successfully reported post.</source>
+        <target>Hvala! Uspešno ste objavili sporočilo.</target>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>Post has been successfullt removed</source>
+        <target>Sporočilo je bilo uspešno odstranjeno</target>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>There is an error during removing of post.</source>
+        <target>Napaka med odstranjevanjem sporočila.</target>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>Write Replica</source>
+        <target>Napiši odgovor</target>
+      </trans-unit>
+      <trans-unit id="97">
+        <source>This post is replicat to post</source>
+        <target>To sporočilo je kopija sporočila</target>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>Go to link</source>
+        <target>Pojdi na povezavo</target>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Vote</source>
+        <target>Glasuj</target>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>Results</source>
+        <target>Rezultati</target>
+      </trans-unit>
+      <trans-unit id="101">
+        <source>Text</source>
+        <target>Tekst</target>
+      </trans-unit>
+      <trans-unit id="102">
+        <source>Video</source>
+        <target>Video</target>
+      </trans-unit>
+      <trans-unit id="103">
+        <source>Poll</source>
+        <target>Vprašalnik</target>
+      </trans-unit>
+      <trans-unit id="104">
+        <source>Edit post</source>
+        <target>Uredi sporočilo</target>
+      </trans-unit>
+      <trans-unit id="105">
+        <source>Save</source>
+        <target>Shrani</target>
+      </trans-unit>
+      <trans-unit id="106">
+        <source>Current Photo</source>
+        <target>Trenutna fotografija</target>
+      </trans-unit>
+      <trans-unit id="107">
+        <source>Photos</source>
+        <target>Fotografije</target>
+      </trans-unit>
+      <trans-unit id="108">
+        <source>Max image size i 1M, allowed formats are *.jpg, *.png and *.gif</source>
+        <target>Maksimalna velikost slike je 1M, dovoljeni formati so *.jpg, *.png in *.gif</target>
+      </trans-unit>
+      <trans-unit id="109">
+        <source>Current video</source>
+        <target>Trenutni video</target>
+      </trans-unit>
+      <trans-unit id="110">
+        <source>Report</source>
+        <target>Poročilo</target>
+      </trans-unit>
+      <trans-unit id="111">
+        <source>Feature</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="112">
+        <source>Unfeature</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="113">
+        <source>Edit</source>
+        <target>Uredi</target>
+      </trans-unit>
+      <trans-unit id="114">
+        <source>Remove</source>
+        <target>Odstrani</target>
+      </trans-unit>
+      <trans-unit id="115">
+        <source>Write replica</source>
+        <target>Napiši repliko</target>
+      </trans-unit>
+      <trans-unit id="116">
+        <source>Colected Badges</source>
+        <target>Zbrane značke</target>
+      </trans-unit>
+      <trans-unit id="117">
+        <source>replicas</source>
+        <target>replike</target>
+      </trans-unit>
+      <trans-unit id="118">
+        <source>There are no more posts</source>
+        <target>Ni več sporočil</target>
+      </trans-unit>
+      <trans-unit id="119">
+        <source>Read More</source>
+        <target>Preberi več</target>
+      </trans-unit>
+      <trans-unit id="120">
+        <source>There are no replicas</source>
+        <target>Ni več replik</target>
+      </trans-unit>
+      <trans-unit id="121">
+        <source>Sort by</source>
+        <target>Urejeno po</target>
+      </trans-unit>
+      <trans-unit id="122">
+        <source>rank</source>
+        <target>rang</target>
+      </trans-unit>
+      <trans-unit id="123">
+        <source>Today</source>
+        <target>Danes</target>
+      </trans-unit>
+      <trans-unit id="124">
+        <source>This week</source>
+        <target>Ta teden</target>
+      </trans-unit>
+      <trans-unit id="125">
+        <source>All</source>
+        <target>Vse</target>
+      </trans-unit>
+      <trans-unit id="126">
+        <source>Chronological</source>
+        <target>Kronološko</target>
+      </trans-unit>
+      <trans-unit id="127">
+        <source>Popularity</source>
+        <target>Popularnost</target>
+      </trans-unit>
+      <trans-unit id="128">
+        <source>Filter by</source>
+        <target>Filtriraj po</target>
+      </trans-unit>
+      <trans-unit id="129">
+        <source>tag</source>
+        <target>oznaka</target>
+      </trans-unit>
+      <trans-unit id="130">
+        <source>Filter by tag</source>
+        <target>Filtritaj po oznakah</target>
+      </trans-unit>
+      <trans-unit id="131">
+        <source>Search</source>
+        <target>Išči</target>
+      </trans-unit>
+      <trans-unit id="132">
+        <source>badge</source>
+        <target>značka</target>
+      </trans-unit>
+      <trans-unit id="133">
+        <source>neutral</source>
+        <target>nevtralno</target>
+      </trans-unit>
+      <trans-unit id="134">
+        <source>type</source>
+        <target>tip</target>
+      </trans-unit>
+      <trans-unit id="135">
+        <source>ingterval</source>
+        <target>interval</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>This Week</source>
+        <target>Ta teden</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>List of Replicas</source>
+        <target>Seznam replik</target>
+      </trans-unit>
+      <trans-unit id="138">
+        <source>Party Posts</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="139">
+        <source>Most popular</source>
+        <target>Najbolj popularni</target>
+      </trans-unit>
+      <trans-unit id="140">
+        <source>You have successfully changed your profile.</source>
+        <target>Uspešno ste spremenili svoj profil.</target>
+      </trans-unit>
+      <trans-unit id="141">
+        <source>You have successfully created party.</source>
+        <target>Uspešno ste kreirali stran.</target>
+      </trans-unit>
+      <trans-unit id="142">
+        <source>You have successfully edit party.</source>
+        <target>Uspešno ste uredili stran.</target>
+      </trans-unit>
+      <trans-unit id="143">
+        <source>Thank you for useing our site.</source>
+        <target>Hvala, da uporabljate našo stran.</target>
+      </trans-unit>
+      <trans-unit id="144">
+        <source>Remove Photo</source>
+        <target>Odstrani fotografijo</target>
+      </trans-unit>
+      <trans-unit id="145">
+        <source>Create</source>
+        <target>Ustvari</target>
+      </trans-unit>
+      <trans-unit id="146">
+        <source>Create Party</source>
+        <target>Ustvari stran</target>
+      </trans-unit>
+      <trans-unit id="147">
+        <source>Create Post</source>
+        <target>Ustvari sporočilo</target>
+      </trans-unit>
+      <trans-unit id="148">
+        <source>My Profile</source>
+        <target>Moj profil</target>
+      </trans-unit>
+      <trans-unit id="149">
+        <source>Edit Party</source>
+        <target>Uredi stran</target>
+      </trans-unit>
+      <trans-unit id="150">
+        <source>Remove Party</source>
+        <target>Odstrani stran</target>
+      </trans-unit>
+      <trans-unit id="151">
+        <source>Profile photo</source>
+        <target>Slika profila</target>
+      </trans-unit>
+      <trans-unit id="152">
+        <source>Basic data</source>
+        <target>Osnovni podatki</target>
+      </trans-unit>
+      <trans-unit id="153">
+        <source>Change password</source>
+        <target>Spremeni geslo</target>
+      </trans-unit>
+      <trans-unit id="154">
+        <source>Delete Account</source>
+        <target>Zbriši račun</target>
+      </trans-unit>
+      <trans-unit id="155">
+        <source>Image has been successfully uploaded.</source>
+        <target>Slika je bila uspešno naložena.</target>
+      </trans-unit>
+      <trans-unit id="156">
+        <source>Report Post</source>
+        <target>Objavi sporočilo</target>
+      </trans-unit>
+      <trans-unit id="157">
+        <source>Register Success</source>
+        <target>Registracija uspešna</target>
+      </trans-unit>
+      <trans-unit id="158">
+        <source>New password</source>
+        <target>Novo geslo</target>
+      </trans-unit>
+      <trans-unit id="159">
+        <source>Your session has been expired. Please login again.</source>
+        <target>Vaša seja je potekla. Prosim, prijavite se ponovno.</target>
+      </trans-unit>
+      <trans-unit id="160">
+        <source>Remove Post</source>
+        <target>Odstrani sporočilo</target>
+      </trans-unit>
+      <trans-unit id="161">
+        <source>Remove Account</source>
+        <target>Odstrani račun</target>
+      </trans-unit>
+      <trans-unit id="162">
+        <source>OK</source>
+        <target>V redu</target>
+      </trans-unit>
+      <trans-unit id="163">
+        <source>Cancel</source>
+        <target>Opusti</target>
+      </trans-unit>
+      <trans-unit id="164">
+        <source>Confirm</source>
+        <target>Potrdi</target>
+      </trans-unit>
+      <trans-unit id="165">
+        <source>Show</source>
+        <target>Pokaži</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

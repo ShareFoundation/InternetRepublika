@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:         Admin
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [admin/main.css, admin/960.css, admin/text.css, admin/template.css, admin/colour.css, admin/black-tie/jquery-ui-1.10.1.custom.css]
+
+  javascripts:    [jquery/jquery-1.7.1.min.js, http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js]
+
+  has_layout:     true
+  layout:         layout

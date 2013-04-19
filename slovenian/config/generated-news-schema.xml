@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.news" defaultIdMethod="native">
+
+  <table name="news">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="url" type="VARCHAR" required="false" />
+    <column name="title" type="VARCHAR" required="true" />
+    <column name="text" type="LONGVARCHAR" required="true" />
+    <column name="is_published" type="boolean" default="1" required="true" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

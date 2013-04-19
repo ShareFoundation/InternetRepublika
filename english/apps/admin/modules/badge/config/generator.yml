@@ -1,0 +1,39 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Badge
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Badge
+    plural:                Badges
+    route_prefix:          badge
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        style:    { label: Color }
+        
+      list:
+        title: Badges
+        display: [=name, badge_type, order]
+        actions: {}
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+      
+      filter:  ~
+      form:
+        display: 
+          "General": [name, description, image, style, order]
+      
+      edit:
+        title: Edit badge %%name%%
+      
+      new:
+        title: Create badge
+
+
+

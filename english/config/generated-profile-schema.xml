@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.profile" defaultIdMethod="native">
+
+  <table name="sf_guard_user_profile" phpName="sfGuardUserProfile">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="email" type="VARCHAR" required="false" />
+    <column name="email_hash" type="VARCHAR" required="false" />
+    <column name="first_name" type="VARCHAR" required="false" />
+    <column name="last_name" type="VARCHAR" required="false" />
+    <column name="image_url" type="VARCHAR" required="false" />
+    <column name="is_email_comfirmed" type="boolean" default="" required="true" />
+    <column name="last_ip" type="VARCHAR" required="false" default="0.0.0.0" />
+    <column name="is_first_login" type="boolean" default="1" required="true" />
+  </table>
+
+</database>

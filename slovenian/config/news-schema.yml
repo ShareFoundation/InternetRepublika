@@ -1,0 +1,14 @@
+propel:
+  _attributes:
+    package:                 lib.model.news
+ 
+  news:
+    _attributes:             { phpName: News }
+    id:                      ~
+    url:                     { type: VARCHAR, required: false }
+    title:                   { type: VARCHAR, required: true }
+    text:                    { type: LONGVARCHAR, required: true }
+    is_published:            { type: boolean, default: true, required: true }
+    
+    created_at:              ~
+    updated_at:              ~

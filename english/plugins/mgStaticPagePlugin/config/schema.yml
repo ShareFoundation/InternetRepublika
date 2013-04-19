@@ -1,0 +1,26 @@
+propel:
+  _attributes:      { package: plugins.mgStaticPagePlugin.lib.model }
+  
+  mg_page:
+    _attributes: { phpName: Page }
+    id:                      ~
+    label:                   { type: VARCHAR, required: true, index: unique }
+    url:                     { type: VARCHAR, required: true, index: unique }
+    title:                   { type: VARCHAR, required: false }
+    meta_title:              { type: VARCHAR, required: false }
+    meta_description:        { type: LONGVARCHAR, required: false }
+    meta_keywords:           { type: LONGVARCHAR, required: false }
+    text:                    { type: LONGVARCHAR, required: false }
+    is_published:            { type: BOOLEAN, required: false }
+    created_at:              ~
+    updated_at:              ~
+    
+  mg_content:
+    _attributes: { phpName: Content }
+    id:                      ~
+    label:                   { type: VARCHAR, required: true, index: unique }
+    title:                   { type: VARCHAR, required: true }
+    text:                    { type: LONGVARCHAR, required: false }
+    is_published:            { type: BOOLEAN, required: false }
+    created_at:              ~
+    updated_at:              ~

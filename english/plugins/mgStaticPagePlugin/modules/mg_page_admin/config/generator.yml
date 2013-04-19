@@ -1,0 +1,32 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Page
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Page
+    plural:                Pages
+    route_prefix:          page
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Pages
+        display: [=label, url, title, is_published]
+        
+      filter:  ~
+      form:
+        display:
+          "General":    [label, url, is_published]
+          "Meta":       [meta_title, meta_description, meta_keywords]
+          "Content":    [title, text]
+          
+      edit:
+        title: Edit page %%title%%
+      
+      new:
+        title: Add new page

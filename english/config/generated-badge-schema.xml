@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.badge" defaultIdMethod="native">
+
+  <table name="badge">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="type_id" type="integer" required="true" />
+    <foreign-key foreignTable="badge_type" onDelete="cascade" onUpdate="cascade">
+      <reference local="type_id" foreign="id" />
+    </foreign-key>
+    <column name="name" type="VARCHAR" required="true" />
+    <column name="description" type="LONGVARCHAR" required="true" />
+    <column name="place_count" type="INTEGER" required="false" default="0" />
+    <column name="image" type="VARCHAR" required="false" />
+    <column name="style" type="VARCHAR" required="false" />
+    <column name="order" type="INTEGER" required="false" default="0" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="badge_type">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="name" type="VARCHAR" required="true" />
+  </table>
+
+  <table name="post_badge">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="badge_id" type="integer" required="true" />
+    <foreign-key foreignTable="badge" onDelete="cascade" onUpdate="cascade">
+      <reference local="badge_id" foreign="id" />
+    </foreign-key>
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="type_id" type="integer" required="true" />
+    <foreign-key foreignTable="badge_type" onDelete="cascade" onUpdate="cascade">
+      <reference local="type_id" foreign="id" />
+    </foreign-key>
+  </table>
+
+</database>

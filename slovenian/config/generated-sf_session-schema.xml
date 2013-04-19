@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.session" defaultIdMethod="native">
+
+  <table name="session">
+    <column name="sess_id" type="varchar" required="true" primaryKey="true" size="128" />
+    <column name="sess_data" type="longvarchar" required="false" />
+    <column name="sess_time" type="integer" />
+    <column name="sess_user" type="integer" required="false" />
+  </table>
+
+</database>

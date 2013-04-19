@@ -1,0 +1,6 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure: true
+  credentials: [["Entire Admin", "See Flag", "See Page", "See Content", "See User", "See News", "See Category", "See Badge", "See Party", "See User", "Manage Flag", "Manage Page", "Manage Content", "Manage User", "Manage News", "Manage Category", "Manage Badge", "Manage Party", "Manage User"]]

@@ -1,0 +1,19 @@
+propel:
+  _attributes:
+    package:                 lib.model.flag
+ 
+  inappropriate:
+    id:                      ~
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    type:                    { type: integer, required: false, default: 1 } # 1 - inapropriate, 2 - missed categroy
+    message:                 { type: longvarchar, required: false }
+    created_at:              ~
+    updated_at:              ~
+    
+  inappropriate_comment:
+    id:                      ~
+    comment_id:              { type: integer, foreignTable: comment, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    created_at:              ~
+    updated_at:              ~

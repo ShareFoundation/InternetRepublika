@@ -1,0 +1,26 @@
+propel:
+  _attributes:
+    package:                 lib.model.badge
+ 
+  badge:
+    id:                      ~
+    type_id:                 { type: integer, foreignTable: badge_type, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    name:                    { type: VARCHAR, required: true }
+    description:             { type: LONGVARCHAR, required: true }
+    place_count:             { type: INTEGER, required: false, default: 0 }
+    image:                   { type: VARCHAR, required: false }
+    style:                   { type: VARCHAR, required: false }
+    order:                   { type: INTEGER, required: false, default: 0 }
+    created_at:              ~
+    updated_at:              ~
+    
+  badge_type:
+    id:                      ~
+    name:                    { type: VARCHAR, required: true }
+
+  post_badge:
+    id:                      ~
+    badge_id:                { type: integer, foreignTable: badge, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    type_id:                 { type: integer, foreignTable: badge_type, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }

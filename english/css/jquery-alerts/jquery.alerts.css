@@ -1,0 +1,86 @@
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-width: 300px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	border: 1px solid #dedede;
+	color: #000;
+}
+
+#popup_title {
+	background: #dedede;
+    color: #000000;
+    font-family: MyriadProCondensed;
+    font-size: 13px;
+    padding: 0.4em 1em;
+    position: relative;
+	margin: 0;
+    text-transform: uppercase;
+}
+
+#popup_content {
+	background: 16px 16px no-repeat url(images/info.gif);
+	padding: 1em 1.75em;
+	margin: 0em;
+}
+
+#popup_content.alert {
+	background-image: url(images/info.gif);
+}
+
+#popup_content.confirm {
+	background-image: url(images/important.gif);
+}
+
+#popup_content.prompt {
+	background-image: url(images/help.gif);
+}
+
+#popup_message {
+    font-family: MyriadProSemiboldCondensed;
+    font-size: 14px;
+	padding: 12px 50px 0;
+	text-align: center;
+    text-transform: uppercase;
+}
+#popup_ok {
+    background: #DDDDDD;
+    border: none;
+    color: #5B5B5B;
+    cursor: pointer;
+    font-family: MyriadProSemiboldCondensed;
+    font-size: 13px;
+    height: 25px;
+    margin-top: 7px;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    width: 70px;
+}
+#popup_cancel {
+    background: #DDDDDD;
+    border: none;
+    color: #5B5B5B;
+    cursor: pointer;
+    font-family: MyriadProSemiboldCondensed;
+    font-size: 13px;
+    height: 25px;
+    margin-top: 7px;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    width: 70px;
+}
+#popup_cancel:hover {
+	background: #cbcbcb;
+}
+#popup_ok:hover {
+	background: #cbcbcb;
+}
+#popup_panel {
+	text-align: center;
+	margin: 1em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.flag" defaultIdMethod="native">
+
+  <table name="inappropriate">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="type" type="integer" required="false" default="1" />
+    <column name="message" type="longvarchar" required="false" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="inappropriate_comment">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="comment_id" type="integer" required="true" />
+    <foreign-key foreignTable="comment" onDelete="cascade" onUpdate="cascade">
+      <reference local="comment_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

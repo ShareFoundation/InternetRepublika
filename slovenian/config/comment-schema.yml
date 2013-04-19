@@ -1,0 +1,15 @@
+propel:
+  _attributes:
+    package:                 lib.model.comment
+ 
+  comment:
+    _attributes:             { phpName: Comment }
+    id:                      ~
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: false, onDelete: cascade, onUpdate: cascade, default: NULL }
+    item_id:                 { type: integer, required: true }
+    item_type:               { type: integer, size: 1, default: 1 }
+    parent_id:               { type: integer, foreignTable: comment, foreignReference: id, required: false, onDelete: cascade, onUpdate: cascade, defaut: NULL }
+    name:                    { type: varchar, required: false }
+    text:                    { type: longvarchar, required: false }
+    created_at:              ~
+    updated_at:              ~

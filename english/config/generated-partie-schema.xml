@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.partie" defaultIdMethod="native">
+
+  <table name="partie">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="name" type="VARCHAR" required="true" />
+    <column name="bio" type="LONGVARCHAR" required="true" size="1000" />
+    <column name="logo" type="VARCHAR" required="false" />
+    <column name="url" type="VARCHAR" required="false" />
+    <column name="facebook_page" type="LONGVARCHAR" required="false" />
+    <column name="total_index" type="float" required="true" default="0" />
+    <column name="is_published" type="boolean" default="1" required="true" />
+    <column name="comments_count" type="integer" required="false" default="0" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

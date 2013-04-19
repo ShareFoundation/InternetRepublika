@@ -1,0 +1,12 @@
+propel:
+  _attributes:
+    package:                 lib.model.newsletter
+ 
+  newsletter:
+    id:                      ~
+    email:                   { type: VARCHAR, required: true }
+    first_name:              { type: VARCHAR, required: false }
+    last_name:               { type: VARCHAR, required: false }
+    is_subscribed:           { type: boolean, default: false, required: true }
+    created_at:              ~
+    updated_at:              ~

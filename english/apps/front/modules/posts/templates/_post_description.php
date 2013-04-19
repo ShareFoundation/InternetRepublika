@@ -1,0 +1,1 @@
+<p class="post-description"><?php echo $post->getPrintText() ?></p> <?php if(strlen($post->getPrintText()) > 250){ ?><a class="readMore" href="<?php echo $post->getLink() ?>"><?php echo __('Read more') ?></a><?php } ?>

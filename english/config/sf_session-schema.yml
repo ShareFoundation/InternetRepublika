@@ -1,0 +1,11 @@
+propel:
+  _attributes:
+    package: lib.model.session
+    defaultIdMethod: native
+    
+  session:
+    _attributes:    { phpName: Session }
+    sess_id:        { type: varchar(128), required: true, primaryKey: true }
+    sess_data:      { type: longvarchar, required: false }
+    sess_time:      { type: integer }
+    sess_user:      { type: integer, required: false }

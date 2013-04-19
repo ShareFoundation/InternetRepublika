@@ -1,0 +1,11 @@
+propel:
+  _attributes:
+    package:                 lib.model.configuration
+    
+  configuration:
+    _attributes:             { phpName: Configuration }
+    id:                      ~
+    code:                    { type: VARCHAR, required: true }
+    value:                   { type: LONGVARCHAR, required: true }
+    created_at:              ~
+    updated_at:              ~

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.menu" defaultIdMethod="native">
+
+  <table name="menu">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="title" type="VARCHAR" required="true" />
+    <column name="link" type="VARCHAR" required="false" />
+    <column name="order_position" type="INTEGER" default="0" />
+    <column name="is_enabled" type="BOOLEAN" default="1" />
+    <column name="is_target_blank" type="BOOLEAN" default="" />
+    <column name="parent_id" type="INTEGER" default="null" />
+    <column name="language" type="VARCHAR" required="true" default="all" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

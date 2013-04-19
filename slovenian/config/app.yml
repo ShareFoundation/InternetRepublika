@@ -1,0 +1,9 @@
+all:
+  ohMailChimp:
+    api_key: a8934d06f5fc3251a65bbef63de16499-us4
+    logging: false              # log all communications for debugging
+    throw_exception: false      # throw an exception on error (which you can handle however you want)
+  
+  sf_guard_plugin:
+     remember_key_expiration_age:  2592000   # 30 days in seconds
+     remember_cookie_name:         rememberCookie

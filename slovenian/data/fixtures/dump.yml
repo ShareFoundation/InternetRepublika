@@ -1,0 +1,20 @@
+sfGuardUser:
+  sfGuardUser_2:
+    username: milos.glavinic@gmail.com
+    algorithm: sha1
+    password: '0909983'
+    created_at: '2012-02-23 10:00:04'
+    last_login: '2012-02-23 10:00:05'
+    is_active: '1'
+    is_super_admin: '1'
+sfGuardUserProfile:
+  sfGuardUserProfile_1:
+    user_id: sfGuardUser_2
+    email: milos.glavinic@gmail.com
+    email_hash: '???5I??z?k??j?'
+    facebook_id: '100002309912079'
+    facebook_token: AAABfcbDZAIWgBABQy5fVmIEj7MyKhJ47OGz96jm340KlVuZBPWDgqg40iv2f8xsBBDRP5ZCgGYQEU7zOrf1qQBnlll4K9mZBGjj3jTUxyRN4g4bGJLpe
+    first_name: Milos
+    last_name: 'Glavini?'
+    is_email_comfirmed: '1'
+    last_ip: 0.0.0.0

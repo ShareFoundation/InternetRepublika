@@ -1,0 +1,118 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+ 
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+ 
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: posts, action: index }
+
+
+
+################################################################################
+#
+#  Main module routings
+#
+################################################################################
+ajax_render_component:
+  url:   /ajax-render-component/:module_name/:component_name/*
+  param: { module: main, action: ajax_render_component }
+
+file_upload:
+  url:   /file-upload/*
+  param: { module: main, action: file_upload }
+  
+file_upload_party:
+  url:   /file-upload-party/*
+  param: { module: main, action: file_upload_party }
+  
+file_upload_post:
+  url:   /file-upload-post/*
+  param: { module: main, action: file_upload_post }
+
+image_from_external_url:
+  url:   /image-from-external-url/:image_url
+  param: { module: main, action: image_from_external_url }
+
+################################################################################
+#
+#  Contact module routings
+#
+################################################################################
+contact:
+  url:   /contact
+  param: { module: contact, action: index }
+
+contact_success:
+  url:   /contact-success
+  param: { module: contact, action: success }
+
+################################################################################
+#
+#  Newsletetr module routings
+#
+################################################################################
+newsletter_subscribe:
+  url:   /newsletter-subscribe
+  param: { module: newsletter, action: newsletter_subscribe }
+
+
+################################################################################
+#
+#  Party module
+#
+################################################################################
+party_search:
+  url:   /parties/*
+  param: { module: parties, action: search }
+  
+party_index:
+  url:   /parties/*
+  param: { module: parties, action: index }
+
+party_view:
+  url:   /party/:url
+  param: { module: parties, action: view }
+  
+################################################################################
+#
+#  News module
+#
+################################################################################
+news_index:
+  url:   /news
+  param: { module: news, action: index }
+
+news_view:
+  url:   /news/:url
+  param: { module: news, action: view }
+  
+################################################################################
+#
+#  Posts module
+#
+################################################################################
+post_view:
+  url:   /post/:url
+  param: { module: posts, action: view }
+
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,51 @@
+propel:
+  _attributes:
+    package:                 lib.model.post
+ 
+  post:
+    id:                      ~
+    partie_id:               { type: integer, foreignTable: partie, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    replica_post_id:         { type: integer, foreignTable: post, foreignReference: id, required: false, onDelete: restrict, onUpdate: cascade }
+    
+    type:                    { type: INTEGER, required: true, default: 1 } # 1. text, 2. photo, 3. quote, 4. link, 5. video, 6. poll 
+    
+    title:                   { type: VARCHAR, required: false }
+    url:                     { type: VARCHAR, required: false }
+    text:                    { type: LONGVARCHAR, required: false }
+      
+    photo_file:              { type: VARCHAR, required: false }
+    photo_url:               { type: VARCHAR, required: false }
+      
+    quote:                   { type: LONGVARCHAR, required: false }
+    quote_author:            { type: VARCHAR, required: false }
+      
+    link_title:              { type: VARCHAR, required: false }
+    link_url:                { type: VARCHAR, required: false }
+    link_image:              { type: VARCHAR, required: false }
+
+    video_url:               { type: VARCHAR, required: false }
+
+    total_index:             { type: float, required: true, default: 0.00 }
+    best_badge_1:            { type: integer, required: true, default: null }
+    best_badge_2:            { type: integer, required: true, default: null }
+    
+    is_published:            { type: boolean, default: true, required: true }
+    is_featured:             { type: boolean, default: false, required: true }
+    
+    comments_count:          { type: integer, required: false, default: 0 }
+
+    created_at:              ~
+    updated_at:              ~
+    
+  post_poll_answer:
+    id:                      ~
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    answer:                  { type: VARCHAR, required: false }
+    
+  post_poll_vote:
+    id:                      ~
+    post_id:                 { type: integer, foreignTable: post, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    answer_id:               { type: integer, foreignTable: post_poll_answer, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    created_at:              ~
+    updated_at:              ~

@@ -1,0 +1,16 @@
+propel:
+  _attributes:
+    package:                 lib.model.menu
+    
+  menu:
+    _attributes:             { phpName: Menu }
+    id:                      ~
+    title:                   { type: VARCHAR, required: true }
+    link:                    { type: VARCHAR, required: false }
+    order_position:          { type: INTEGER, default: 0 }
+    is_enabled:              { type: BOOLEAN, default: true }
+    is_target_blank:         { type: BOOLEAN, default: false }
+    parent_id:               { type: INTEGER, default: null }
+    language:                { type: VARCHAR, required: true, default: 'all' }
+    created_at:              ~
+    updated_at:              ~

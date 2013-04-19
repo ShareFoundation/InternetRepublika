@@ -1,0 +1,1 @@
+<p><?php echo $post->getPrintText() ?></p>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.configuration" defaultIdMethod="native">
+
+  <table name="configuration">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="code" type="VARCHAR" required="true" />
+    <column name="value" type="LONGVARCHAR" required="true" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>

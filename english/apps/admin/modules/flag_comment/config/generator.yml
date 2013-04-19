@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           InappropriateComment
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              InappropriateComment
+    plural:                InappropriateComments
+    route_prefix:          inappropriate_comment
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        comment:             { is_real: true }
+        #count:               { is_real: true }
+
+      list:
+        title: Flaged Comments
+        display: [comment, count]
+        peer_method: doSelectJoinAll
+        batch_actions: {}
+        actions: {}
+        object_actions:
+          _delete: ~
+          test: ~
+        
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

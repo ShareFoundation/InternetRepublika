@@ -1,0 +1,19 @@
+propel:
+  _attributes:
+    package:                 lib.model.profile
+ 
+  sf_guard_user_profile:
+    _attributes:             { phpName: sfGuardUserProfile }
+    id:                      ~
+    user_id:                 { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+    
+    email:                   { type: VARCHAR, required: false }
+    email_hash:              { type: VARCHAR, required: false }
+    
+    first_name:              { type: VARCHAR, required: false }
+    last_name:               { type: VARCHAR, required: false }
+    image_url:               { type: VARCHAR, required: false }
+    
+    is_email_comfirmed:      { type: boolean, default: false, required: true }
+    last_ip:                 { type: VARCHAR, required: false, default: "0.0.0.0" }
+    is_first_login:          { type: boolean, default: true, required: true }

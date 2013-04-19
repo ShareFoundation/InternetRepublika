@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.rang" defaultIdMethod="native">
+
+  <table name="post_visits">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="false" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="cookie_id" type="varchar" required="false" />
+    <column name="created_at" type="timestamp" />
+  </table>
+
+  <table name="partie_visits">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="partie_id" type="integer" required="true" />
+    <foreign-key foreignTable="partie" onDelete="cascade" onUpdate="cascade">
+      <reference local="partie_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="false" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="cookie_id" type="varchar" required="false" />
+    <column name="created_at" type="timestamp" />
+  </table>
+
+  <table name="post_daily_stats">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="like" type="integer" required="true" default="0" />
+    <column name="twitt" type="integer" required="true" default="0" />
+    <column name="comment" type="integer" required="true" default="0" />
+    <column name="badge" type="integer" required="true" default="0" />
+    <column name="views" type="integer" required="true" default="0" />
+    <column name="current_index" type="float" required="true" default="0" />
+    <column name="created_at" type="timestamp" />
+  </table>
+
+  <table name="partie_daily_stats">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="partie_id" type="integer" required="true" />
+    <foreign-key foreignTable="partie" onDelete="cascade" onUpdate="cascade">
+      <reference local="partie_id" foreign="id" />
+    </foreign-key>
+    <column name="like" type="integer" required="true" default="0" />
+    <column name="twitt" type="integer" required="true" default="0" />
+    <column name="comment" type="integer" required="true" default="0" />
+    <column name="badge" type="integer" required="true" default="0" />
+    <column name="views" type="integer" required="true" default="0" />
+    <column name="current_index" type="float" required="true" default="0" />
+    <column name="created_at" type="timestamp" />
+  </table>
+
+  <table name="post_index">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="daily" type="float" required="true" default="0" />
+    <column name="weekly" type="float" required="true" default="0" />
+    <column name="total" type="float" required="true" default="0" />
+  </table>
+
+  <table name="partie_index">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="partie_id" type="integer" required="true" />
+    <foreign-key foreignTable="partie" onDelete="cascade" onUpdate="cascade">
+      <reference local="partie_id" foreign="id" />
+    </foreign-key>
+    <column name="daily" type="float" required="true" default="0" />
+    <column name="weekly" type="float" required="true" default="0" />
+    <column name="total" type="float" required="true" default="0" />
+  </table>
+
+  <table name="partie_custom_points">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="partie_id" type="integer" required="true" />
+    <foreign-key foreignTable="partie" onDelete="cascade" onUpdate="cascade">
+      <reference local="partie_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="points" type="integer" required="true" default="0" />
+    <column name="created_at" type="timestamp" />
+  </table>
+
+</database>

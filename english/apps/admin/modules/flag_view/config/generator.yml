@@ -1,0 +1,31 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Inappropriate
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Inappropriate
+    plural:                Inappropriates
+    route_prefix:          inappropriate_flag_view
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        type_text: {label: Type}
+        sf_guard_user: {label: User }
+      list:
+        title: Report
+        display: [sf_guard_user, type_text, message, created_at]
+        object_actions:
+          _delete: ~
+          _view: { action: view, target: _blank }
+        batch_actions: {}
+        actions:
+          _back: { action: back }
+      filter:
+      form:    ~
+      edit:    ~
+      new:     ~

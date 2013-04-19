@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" package="lib.model.post" defaultIdMethod="native">
+
+  <table name="post">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="partie_id" type="integer" required="true" />
+    <foreign-key foreignTable="partie" onDelete="cascade" onUpdate="cascade">
+      <reference local="partie_id" foreign="id" />
+    </foreign-key>
+    <column name="replica_post_id" type="integer" required="false" />
+    <foreign-key foreignTable="post" onDelete="restrict" onUpdate="cascade">
+      <reference local="replica_post_id" foreign="id" />
+    </foreign-key>
+    <column name="type" type="INTEGER" required="true" default="1" />
+    <column name="title" type="VARCHAR" required="false" />
+    <column name="url" type="VARCHAR" required="false" />
+    <column name="text" type="LONGVARCHAR" required="false" />
+    <column name="photo_file" type="VARCHAR" required="false" />
+    <column name="photo_url" type="VARCHAR" required="false" />
+    <column name="quote" type="LONGVARCHAR" required="false" />
+    <column name="quote_author" type="VARCHAR" required="false" />
+    <column name="link_title" type="VARCHAR" required="false" />
+    <column name="link_url" type="VARCHAR" required="false" />
+    <column name="link_image" type="VARCHAR" required="false" />
+    <column name="video_url" type="VARCHAR" required="false" />
+    <column name="total_index" type="float" required="true" default="0" />
+    <column name="best_badge_1" type="integer" required="true" default="null" />
+    <column name="best_badge_2" type="integer" required="true" default="null" />
+    <column name="is_published" type="boolean" default="1" required="true" />
+    <column name="is_featured" type="boolean" default="" required="true" />
+    <column name="comments_count" type="integer" required="false" default="0" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="post_poll_answer">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="answer" type="VARCHAR" required="false" />
+  </table>
+
+  <table name="post_poll_vote">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="post_id" type="integer" required="true" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id" />
+    </foreign-key>
+    <column name="user_id" type="integer" required="true" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="cascade" onUpdate="cascade">
+      <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="answer_id" type="integer" required="true" />
+    <foreign-key foreignTable="post_poll_answer" onDelete="cascade" onUpdate="cascade">
+      <reference local="answer_id" foreign="id" />
+    </foreign-key>
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+</database>
